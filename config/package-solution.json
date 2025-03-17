@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ace-cafe-card-sample-solution-client-side-solution",
+    "id": "d2e47012-2aa5-45e0-a9e4-25ffd56525df",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ACE-CafeCard-Sample-Solution description"
+      },
+      "longDescription": {
+        "default": "ACE-CafeCard-Sample-Solution description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ace-cafe-card-sample-solution Feature",
+        "description": "The feature that activates elements of the ace-cafe-card-sample-solution solution.",
+        "id": "19b7eeb9-ad10-4826-bdf4-cfe0f7884a17",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ace-cafe-card-sample-solution.sppkg"
+  }
+}

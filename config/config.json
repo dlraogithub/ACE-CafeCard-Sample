@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ace-cafe-card-sample-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/aceCafeCardSample/AceCafeCardSampleAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/aceCafeCardSample/AceCafeCardSampleAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AceCafeCardSampleAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/aceCafeCardSample/loc/{locale}.js"
+  }
+}

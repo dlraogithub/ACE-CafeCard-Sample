@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.10.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "ace-cafe-card-sample-solution",
+    "libraryId": "d2e47012-2aa5-45e0-a9e4-25ffd56525df",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ACE-CafeCard-Sample-Solution",
+    "solutionShortDescription": "ACE-CafeCard-Sample-Solution description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "Generic"
+  }
+}

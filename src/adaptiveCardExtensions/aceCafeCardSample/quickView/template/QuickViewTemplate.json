@@ -1,0 +1,249 @@
+{
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "TextBlock",
+      "weight": "Bolder",
+      "text": "${title}"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "size": "small",
+              "text": "${subTitle}",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "**CAFE HOURS**",
+      "color": "warning",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "spacing": "large",
+      "facts": [
+        {
+          "title": "COFFEE SERVICE",
+          "value": "**7:00 – 3:00**"
+        },
+        {
+          "title": "BREAKFAST",
+          "value": "**7:30 – 10:00**"
+        },
+        {
+          "title": "LUNCH",
+          "value": "**11:00 – 2:00**"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "**LUNCH MENU**",
+      "color": "warning",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${description}",
+      "wrap": true
+    },
+    {
+      "type": "Container",
+      "spacing": "Large",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "spacing": "Large",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "TITLE",
+                  "size": "small",
+                  "weight": "Bolder",
+                  "style": "heading",
+                  "wrap": true
+                }
+              ],
+              "width": "100px"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "PRICE",
+                  "size": "small",
+                  "weight": "Bolder",
+                  "style": "heading",
+                  "wrap": true
+                }
+              ],
+              "width": "stretch"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "LOCATION",
+                  "size": "small",
+                  "weight": "Bolder",
+                  "style": "heading",
+                  "wrap": true
+                }
+              ],
+              "width": "60px"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "CATEGORY",
+                  "size": "small",
+                  "weight": "Bolder",
+                  "style": "heading",
+                  "wrap": true
+                }
+              ],
+              "width": "80px"
+            }
+          ]
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "$data": "${listItems}",
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${title}",
+                  "size": "small",
+                  "wrap": true
+                }
+              ],
+              "width": "100px"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "$ ${formatNumber(price, 2)}",
+                  "size": "small",
+                  "wrap": true
+                }
+              ],
+              "width": "stretch"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${location}",
+                  "size": "small",
+                  "horizontalAlignment": "center",
+                  "wrap": true
+                }
+              ],
+              "width": "60px"
+            },
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "${category}",
+                  "color": "${if(category == 'GRILL LUNCH', 'good', if(category == 'FRIES', 'warning', if(category == 'SOUP', 'accent', if(category == 'SANDWICHES', 'attention', ''))))}",
+                  "size": "small",
+                  "wrap": true
+                }
+              ],
+              "width": "80px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "**WEEKLY LUNCH SPECIALS**",
+      "color": "warning",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "spacing": "large",
+      "facts": [
+        {
+          "title": "**M**",
+          "value": "Baked Manicotti, Marina, Mozzarella, Parmesan, Seasonal Vegetables"
+        },
+        {
+          "title": "**T**",
+          "value": "Taco Tuesday"
+        },
+        {
+          "title": "**W**",
+          "value": "Pizza Partito"
+        },
+        {
+          "title": "**TH**",
+          "value": "Turkey a la King, Rice"
+        },
+        {
+          "title": "**F**",
+          "value": "Steak Fajitas, Spanish Rice, Cuban Black Beans"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View Menu (pdf version)",
+      "url": "${url}"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Welcome to our online catering system!",
+      "url": "https://thehughescafe.catertrax.com/"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "LFF Order Form",
+      "url": "https://www.clover.com/online-ordering/ays-hospitality-llc-germantown/"
+    }
+  ]
+}
