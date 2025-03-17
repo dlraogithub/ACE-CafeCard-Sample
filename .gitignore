@@ -1,34 +1,15 @@
-# Logs
-logs
-*.log
-npm-debug.log*
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# Dependency directories
-node_modules
+# IDE settings
+.vscode/
+.idea/
 
-# Build generated files
-dist
-lib
-release
-solution
-temp
-*.sppkg
-.heft
-
-# Coverage directory used by tools like istanbul
-coverage
-
-# OSX
+# OS generated files
 .DS_Store
+Thumbs.db
 
-# Visual Studio files
-.ntvs_analysis.dat
-.vs
-bin
-obj
-
-# Resx Generated Code
-*.resx.ts
-
-# Styles Generated Code
-*.scss.ts
+# Log files
+*.log
